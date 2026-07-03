@@ -1,0 +1,59 @@
+[workspace]
+resolver = "2"
+
+members = [
+    "crates/nautilus-twelvedata",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.75"
+authors = ["Your Name"]
+license = "LGPL-3.0"
+description = "TwelveData adapter for NautilusTrader"
+documentation = "https://nautilustrader.io/docs/"
+repository = "https://github.com/yourusername/TwelveAdapter"
+homepage = "https://nautilustrader.io"
+categories = ["finance", "data-structures"]
+keywords = ["trading", "stocks", "market-data", "twelvedata"]
+
+[workspace.dependencies]
+# Async runtime
+tokio = { version = "1.35", features = ["full"] }
+
+# HTTP client
+reqwest = { version = "0.12", features = ["json", "rustls-tls"] }
+
+# Serialization
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+# Error handling
+thiserror = "1.0"
+anyhow = "1.0"
+
+# Date/time
+chrono = { version = "0.4", features = ["serde"] }
+chrono-tz = "0.8"
+
+# String interning
+ustr = "1.0"
+
+# Builder pattern
+bon = "2.0"
+
+# Python bindings (optional)
+pyo3 = { version = "0.23", features = ["extension-module"] }
+pyo3-async-runtimes = { version = "0.23", features = ["tokio-runtime"] }
+
+# Logging
+log = "0.4"
+
+[workspace.lints.rust]
+unsafe_code = "deny"
+nonstandard_style = "deny"
+
+[workspace.lints.clippy]
+missing_errors_doc = "deny"
+missing_panics_doc = "deny"

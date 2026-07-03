@@ -1,0 +1,63 @@
+[package]
+name = "nautilus-twelvedata"
+version = "0.1.3"
+edition.workspace = true
+rust-version.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "High-performance TwelveData adapter for NautilusTrader"
+readme = "../../README.md"
+documentation.workspace = true
+repository.workspace = true
+homepage.workspace = true
+categories.workspace = true
+keywords.workspace = true
+
+[lints]
+workspace = true
+
+[lib]
+name = "nautilus_twelvedata"
+crate-type = ["rlib", "cdylib"]
+
+[features]
+default = []
+python = [
+    "pyo3",
+    "pyo3-async-runtimes",
+]
+
+[dependencies]
+# HTTP client
+reqwest = { workspace = true }
+
+# Serialization
+serde = { workspace = true }
+serde_json = { workspace = true }
+
+# Error handling
+thiserror = { workspace = true }
+anyhow = { workspace = true }
+
+# Date/time
+chrono = { workspace = true }
+chrono-tz = { workspace = true }
+
+# String interning
+ustr = { workspace = true }
+
+# Builder pattern
+bon = { workspace = true }
+
+# Async runtime
+tokio = { workspace = true }
+
+# Logging
+log = { workspace = true }
+
+# Python bindings (optional)
+pyo3 = { workspace = true, optional = true }
+pyo3-async-runtimes = { workspace = true, optional = true }
+
+[dev-dependencies]
+tokio = { workspace = true, features = ["test-util", "macros"] }
