@@ -43,10 +43,10 @@ analysis = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/yourusername/nautilus-twelvedata"
-Documentation = "https://github.com/yourusername/nautilus-twelvedata#readme"
-Repository = "https://github.com/yourusername/nautilus-twelvedata"
-Changelog = "https://github.com/yourusername/nautilus-twelvedata/blob/main/CHANGELOG.md"
+Homepage = "https://github.com/greenstephen/TwelveAdapter"
+Documentation = "https://github.com/greenstephen/TwelveAdapter#readme"
+Repository = "https://github.com/greenstephen/TwelveAdapter"
+Changelog = "https://github.com/greenstephen/TwelveAdapter/blob/main/CHANGELOG.md"
 
 [tool.maturin]
 features = ["pyo3/extension-module"]

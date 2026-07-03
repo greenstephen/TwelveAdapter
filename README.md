@@ -16,7 +16,7 @@ pip install nautilus-twelvedata
 ### Install from Source
 
 ```bash
-git clone https://github.com/yourusername/nautilus-twelvedata.git
+git clone https://github.com/greenstephen/TwelveAdapter.git
 cd nautilus-twelvedata
 pip install maturin
 maturin develop --release
@@ -294,7 +294,7 @@ for symbol in symbols:
 
 ### Getting Help
 
-- [GitHub Issues](https://github.com/yourusername/nautilus-twelvedata/issues)
+- [GitHub Issues](https://github.com/greenstephen/TwelveAdapter/issues)
 - [NautilusTrader Discord](https://discord.gg/nautilustrader)
 - [TwelveData Documentation](https://twelvedata.com/docs)
 
@@ -312,7 +312,7 @@ Contributions are welcome! Please follow these steps:
 
 ```bash
 # Clone and setup
-git clone https://github.com/yourusername/nautilus-twelvedata.git
+git clone https://github.com/greenstephen/TwelveAdapter.git
 cd nautilus-twelvedata
 python -m venv venv
 source venv/bin/activate
